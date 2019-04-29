@@ -1,0 +1,17 @@
+{
+  "name": "project-async-await",
+  "version": "1.0.0",
+  "description": "project async await to try use async await",
+  "main": "index.js",
+  "repository": "https://github.com/yevgenysiregar/project-async-await.git",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Yevgeny Omar Siregar <siregar.yevgeny@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "nodemon": "1.18.11"
+  }
+}
