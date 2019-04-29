@@ -48,19 +48,21 @@ tryPromise
     console.error(error);
   });
 
-const condition = true;
+// const condition = true;
+
+const promptCondition = prompt("Are you sick?");
 
 const myPromise = new Promise((resolve, reject) => {
-  if (condition) {
+  if (promptCondition == "yes") {
     resolve("Fulfilled! your access is granted");
-  } else {
+  } else if (promptCondition == "no") {
     reject(new Error("Rejected! Access rejected"));
+  } else {
+    return;
   }
 });
 
-myPromise
-  .then(result => console.log(result))
-  .catch(error => console.log(error.message));
+myPromise.then(result => alert(result)).catch(error => alert(error.message));
 
 const situation = false;
 
